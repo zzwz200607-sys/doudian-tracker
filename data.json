@@ -1,38 +1,13 @@
 [
   {
     "date": "2026-10-08",
-    "visitors": 416,
-    "exposure": 462,
-    "orders": 1,
-    "revenue": 2.34,
+    "visitors": 20,
+    "exposure": 0,
+    "orders": 4,
+    "revenue": 1,
     "score": 70,
-    "conversion": 2.64,
-    "captureTime": "2026-10-08T11:31:00.206Z",
-    "productStats": [
-      {
-        "name": "1",
-        "exposure": 0,
-        "orders": 2.34,
-        "revenue": 0
-      },
-      {
-        "name": "整体",
-        "exposure": 4852.54,
-        "orders": 3.8051,
-        "revenue": 0
-      },
-      {
-        "name": "商品卡搜索",
-        "exposure": 4852.54,
-        "orders": 3.805,
-        "revenue": 0
-      },
-      {
-        "name": "其他搜索",
-        "exposure": 0,
-        "orders": 0.001,
-        "revenue": 0
-      }
-    ]
+    "conversion": 20,
+    "captureTime": "2026-10-08T11:35:48.681Z",
+    "productStats": []
   }
 ]
