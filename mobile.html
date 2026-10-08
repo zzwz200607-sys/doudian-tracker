@@ -150,9 +150,8 @@
 <button class="btn" onclick="loadData()">刷新数据</button>
 
 <script>
-    // === 配置：用户需要替换为自己的 blob ID ===
-    const BLOB_ID = '91a11a9f-c397-78c9-8ca7-6ee24f92888a';
-    const CLOUD_URL = 'https://jsonblob.com/api/jsonBlob/' + BLOB_ID;
+    // === 配置：从 GitHub raw 读取数据 ===
+    const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/zzwz200607-sys/doudian-tracker/main/data.json';
 
     function calcConversion(visitors, orders) {
         if (!visitors || visitors === 0) return 0;
@@ -169,16 +168,11 @@
     }
 
     async function loadData() {
-        if (BLOB_ID === 'YOUR_BLOB_ID_HERE') {
-            document.getElementById('syncInfo').textContent = '请先配置Blob ID';
-            document.getElementById('noData').textContent = '请在代码中替换YOUR_BLOB_ID_HERE';
-            return;
-        }
-
-        document.getElementById('syncInfo').textContent = '正在从云端加载...';
+        document.getElementById('syncInfo').textContent = '正在从 GitHub 加载...';
 
         try {
-            const response = await fetch(CLOUD_URL, {
+            // 加随机数防止缓存
+            const response = await fetch(GITHUB_RAW_URL + '?t=' + Date.now(), {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json' }
             });
@@ -189,7 +183,7 @@
 
             const data = await response.json();
             if (!Array.isArray(data) || data.length === 0) {
-                document.getElementById('syncInfo').textContent = '云端暂无数据，请先在电脑端抓取';
+                document.getElementById('syncInfo').textContent = '暂无数据，请先在电脑端抓取';
                 document.getElementById('noData').style.display = 'block';
                 return;
             }
