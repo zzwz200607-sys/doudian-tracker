@@ -1,13 +1,13 @@
 [
   {
     "date": "2026-10-08",
-    "visitors": 417,
+    "visitors": 418,
     "exposure": 462,
     "orders": 1,
     "revenue": 2.34,
     "score": 70,
-    "conversion": 2.64,
-    "captureTime": "2026-10-08T11:47:01.833Z",
+    "conversion": 2.63,
+    "captureTime": "2026-10-08T11:48:01.838Z",
     "productStats": [
       {
         "name": "1",
