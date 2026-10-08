@@ -7,7 +7,14 @@
     "revenue": 2.34,
     "score": 70,
     "conversion": 2.64,
-    "captureTime": "2026-10-08T11:36:45.845Z",
-    "productStats": []
+    "captureTime": "2026-10-08T11:37:45.842Z",
+    "productStats": [
+      {
+        "name": "1",
+        "exposure": 0,
+        "orders": 2.34,
+        "revenue": 0
+      }
+    ]
   }
 ]
