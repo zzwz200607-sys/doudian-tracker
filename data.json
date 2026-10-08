@@ -10,26 +10,26 @@
     "captureTime": "2026-10-08T12:10:35.487Z",
     "productStats": [
       {
-        "name": "1",
         "exposure": 0,
+        "name": "1",
         "orders": 2.34,
         "revenue": 0
       },
       {
-        "name": "整体",
         "exposure": 4852.54,
+        "name": "整体",
         "orders": 3.8051,
         "revenue": 0
       },
       {
-        "name": "商品卡搜索",
         "exposure": 4852.54,
+        "name": "商品卡搜索",
         "orders": 3.805,
         "revenue": 0
       },
       {
-        "name": "其他搜索",
         "exposure": 0,
+        "name": "其他搜索",
         "orders": 0.001,
         "revenue": 0
       }
